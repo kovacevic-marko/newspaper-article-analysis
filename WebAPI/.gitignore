@@ -1,0 +1,14 @@
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media
+.vscode
+
+# trenirani podaci za WebAPI
+count_vectorizer.pkl
+label_binarizer.pkl
+model_za_predvidjanje.h5
+preciznost_modela.pkl

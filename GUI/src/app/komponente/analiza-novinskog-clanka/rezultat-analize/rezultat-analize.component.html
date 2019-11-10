@@ -1,0 +1,41 @@
+<div *ngIf="rezulatAnalizeClanka" class="mt-5 text-center">
+    <div class="container">
+        <h2 class="mb-4">Резултат анализе</h2>
+
+        <div class="card mb-4">
+            <h5 class="card-header">Предвиђање чланка</h5>
+            <div class="card-body">
+                <p class="card-text">Чланак припада категорији: <b>{{ rezulatAnalizeClanka.predvidjanjeClanka.predvidjanje }}</b></p>
+                <p class="card-text">Прецизност тренираног модела: <b>{{ rezulatAnalizeClanka.predvidjanjeClanka.preciznostModela }}%</b></p>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <h5 class="card-header">Сентимент анализа чланка</h5>
+            <div class="card-body">
+                <div class="row d-flex justify-content-center mb-3">
+                    <ngx-charts-pie-chart
+                        [view]="view"
+                        [scheme]="colorScheme"
+                        [results]="single"
+                        [legend]="showLegend"
+                        [explodeSlices]="explodeSlices"
+                        [labels]="showLabels"
+                        [doughnut]="doughnut"
+                        [arcWidth]="arcWidth">
+                    </ngx-charts-pie-chart>
+                </div>
+
+                <div class="row text-center mb-2">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="text-left">
+                            Позитивно: <b>{{ rezulatAnalizeClanka.sentimentAnaliza.pozitivno }}%</b> <br>
+                            Негативно: <b>{{ rezulatAnalizeClanka.sentimentAnaliza.negativno }}%</b> <br>
+                            Неутрално: <b>{{ rezulatAnalizeClanka.sentimentAnaliza.neutralno }}%</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

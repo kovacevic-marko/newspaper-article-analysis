@@ -1,0 +1,12 @@
+<div class="p-5 mt-4">
+    <div class="container">
+        <h3 class="text-center mb-3">Унесите текст чланка</h3>
+        <textarea class="form-control" rows="7" [(ngModel)]="tekstClanka"></textarea>
+    
+        <div class="text-center mt-4">
+            <button [disabled]="!daLiPostojiTekst" class="btn btn-primary" (click)="analizirajClanak()">Анализирај</button>
+        </div>
+    </div>
+</div>
+
+<div [ngBusy]="{busy: busy, message: 'Текст се анализира', backdrop: true}"></div>
