@@ -52,8 +52,9 @@
 8.	Предвиђање
 9.	Обрнута бинарна трансформација
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/1.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/1.png" /><br>
 Слика 1 - Процес предвиђања новинског чланка
+</p> 
 
 #### 4.1.1.	 Токенизација (енгл. Тokenization)
 Токенизација је процес раздвајања низа речи на појединачне делове као што су речи, симболи или било који други елементи који имају значење. Добијени појединачни део назива се Токен.
@@ -95,8 +96,10 @@
 Поред Лематизације постоји и техника Стемовање (енгл. Stemming) која се често користи у препроцесирању текста и која уклња почетак или крај речи користећи листу заједничких префикса и суфикса као што су (-ing, -ed, -es).
 Разлика је у томе што Лематизација морфолошки анализира речи и враћа Лему а Стемовање само уклања део речи да би се добио њен корен речи који се назива Стем.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/2.png" /></p>  
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/2.png" />
+<br>
 Слика 2 – Разлика између Стемовања и Лематизације
+</p>  
 
 #### 4.1.4.	 Векторизација (енгл. Vectorization)
 Векторизација је процес претварања текста у низове односно векторе бројева.
@@ -107,18 +110,23 @@
 
 На слици испод је представљен пример Векторизације три боје „”Red”, “Yellow”, “Green”. 
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/3.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/3.png" width="500px"/><br>
 Слика 3 – Векторизација, пример 1
+</p> 
 
 На слици испод је представљен пример Векторизације речи “Rome”, “Paris”, “Italy” и “France”,
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/4.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/4.png" width="550px"/>
+<br>
 Слика 4 - Векторизација, пример 2
+</p>
 
 На слици испод је представљен пример Векторизације текста „The quick brown fox jumped over the brown dog”.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/5.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/5.png" />
+<br>
 Слика 5 - Векторизација, пример 3
+</p> 
 
 #### 4.1.4.1.	Векторизација бројањем (енгл. Count Vectorization)
 У нашем случају приликом предвиђања новинског чланка користи се специфична врста Векторизације која се зове Векторизација бројањем (енгл. Count Vectorization).
@@ -127,8 +135,10 @@
 
 На слици испод је приказан пример Векторизације бројањем.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/6.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/6.png" />
+<br>
 Слика 6 – Пример Векторизације бројањем
+</p> 
 
 #### 4.1.5.	 Бинарна трансформација ознака (енгл. Label Binarization)
 Бинарна трансформација ознака се користи за претварање Зависних варијабли у низове односно векторе.
@@ -141,8 +151,10 @@
 
 На слици испод видимо пример Бинарне трансформације речи “cold”, “hot” и “warm”.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/7.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/7.png" />
+<br>
 Слика 7 – Пример Бинарне трансформације ознака
+</p> 
 
 #### 4.1.6.	Тренирање модела за предвиђање
 За тренирање и предвиђање категорије новинског чланка користе се Вештачке неуронске мреже.
@@ -171,8 +183,10 @@ Python-ова библиотека која је коршћена за Вешт�
 
 Укупан број синапси односно тежина између неурона је: 15 729 285
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/8.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/8.png" />
+<br>
 Слика 8 – Део Вештачке неуронске мреже за предвиђање категорије новинског чланка
+</p> 
 
 #### 4.1.6.1.	Рачунање броја синапси
 Број синапси је исти као и број тежина односно параметара који служе за тренирање. Од тог броја зависи колика ће трајати тренирање. Што је већи број онда је тренирање дуже.
@@ -212,8 +226,10 @@ Python-ова библиотека која је коршћена за Вешт�
 1.	Токенизација
 2.	Сентимент анализа
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/9.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/9.png" width="400px"/>
+<br>
 Слика 9 – Процес сентимент анализе новинског чланка
+</p> 
 
 #### 4.2.1.	 Токенизација
 Токенизација је процес раздвајања низа речи на појединачне делове као што су речи, симболи или било који други елементи који имају значење. Добијени појединачни део назива се Токен.
@@ -239,14 +255,20 @@ Python-ова библиотека која је коршћена за Вешт�
 
 ## 5.	Слике апликације
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/10.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/10.png" />
+<br>
 Слика 10 – Анализа новинских чланака – 1. Уношење текста чланка
+</p> 
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/11.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/11.png" />
+<br>
 Слика 11 – Анализа новинских чланака – 2. Анализирање текста чланка
+</p> 
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/12.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/12.png" />
+<br>
 Слика 12 – Анализа новинских чланака – 3. Резултат анализе чланка
+</p> 
 
 ## 6.	Покретање апликације
 Апликација се састоји из два дела апликације:
@@ -260,25 +282,33 @@ Python-ова библиотека која је коршћена за Вешт�
 
 Преузимамо Python инсталацију кликом на дугме „Downloads“
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/13.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/13.png" />
+<br>
 Слика 13 – Преузимање Python инсталације – Корак 1
+</p>
 
 
 Затим кликнемо на дугме „Download Python“ (верзија за Windows).
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/14.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/14.png" />
+<br>
 Слика 14 – Преузимање Python инсталације – Корак 2
+</p>
 
 Затим инсталирамо Python фајл који смо преузели.
 На слици испод је објашњено да прво морамо да обележимо поље „Add Python 3.7 to PATH“ па да кликнемо на „Install Now“.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/15.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/15.png" />
+<br>
 Слика 15 – Инсталирање Python-а – Корак 1
+</p> 
 
 Програм се инсталира. Након завршетка кликнућемо на „Close“.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/16.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/16.png" />
+<br>
 Слика 16 – Инсталирање Python-а – Корак 2
+</p> 
 
 2.	Након инсталације Python-а отворите „Command Prompt“
 
@@ -289,13 +319,17 @@ Python-ова библиотека која је коршћена за Вешт�
 5.	Затим је потребно да подигнемо Python Django сервер, тако што ћемо у Command Prompt-у извршити команду „python manage.py runserver“
 
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/17.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/17.png" />
+<br>
 Слика 17 – Подизање Python сервер-а
+</p>
 
 Сервер је успешно подигнут када се на крају испише порука као што је на слици испод.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/18.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/18.png" />
+<br>
 Слика 18 – Успешно подигнут Python сервер
+</p> 
 
 ### 6.2.	Покретање GUI дела апликације
 
@@ -303,38 +337,52 @@ Python-ова библиотека која је коршћена за Вешт�
 
 Преизимамо NodeJS апликацију кликом на дугме „верзија NodeJS-а LTS“ на почетној страници.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/19.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/19.png" />
+<br>
 Слика 19 – Преузимање Node-JS-a
+</p> 
 
 Затим инсталирамо фајл који смо преузели. Отварамо фајл и кликнемо на дугме „Next“.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/20.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/20.png" />
+<br>
 Слика 20 – Инсталирање NodeJS-а – Корак 1
+</p> 
 
 Затим кликнемо на „I accept the terms in the License Agreement“ па кликенмо на дугме „Next“.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/21.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/21.png" />
+<br>
 Слика 21 – Инсталирање NodeJS-а – Корак 2
+</p> 
 
 Затим кликнемо на дугме „Next”.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/22.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/22.png" />
+<br>
 Слика 22 – Инсталирање NodeJS-а – Корак 3
+</p> 
 
 Затим кликнемо на дугме „Next”.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/23.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/23.png" />
+<br>
 Слика 23 – Инсталирање NodeJS-а – Корак 4
+</p>
 
 Затим кликнемо на дугме „Install”.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/24.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/24.png" />
+<br>
 Слика 24 – Инсталирање NodeJS-а – Корак 5
+</p> 
 
 Након завршетка инсталације кликнемо на дугме „Finish”.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/25.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/25.png" />
+<br>
 Слика 25 – Инсталирање NodeJS-а – Корак 6
+</p> 
 
 2.	Отварамо нови „Command Prompt“ (битно је да не затварамо претходни Command Prompt преко којег је покренут Python део апликације)
 
@@ -347,15 +395,19 @@ Python-ова библиотека која је коршћена за Вешт�
 6.	Извршимо команду „ng serve --open"
 
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/26.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/26.png" />
+<br>
 Слика 26 – Покретање GUI дела апликације
+</p> 
 
 Након успешног покретања GUI дела апликације у Commant Prompt-у треба да се испише порука као на слици испод.
 
-<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/27.png" /></p> 
+<p align="center"><img src="https://raw.githubusercontent.com/kovacevic-marko/newspaper-article-analysis/master/Screenshots/27.png" />
+<br>
 Слика 27 – Успешно покренут GUI део апликације
+</p> 
 
 Након тога ће се отворити апликација у Web browser-у и моћи ћемо да је користимо.
 Web локација апликације након успешног покретања је http://localhost:4200/ .
 
-### Датум производње: Новембар 2019.
+#### Датум производње: Новембар 2019.
