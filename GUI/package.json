@@ -21,7 +21,7 @@
     "@angular/router": "~8.2.5",
     "@swimlane/ngx-charts": "^12.0.1",
     "bootstrap": "^4.3.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "ng-busy": "^8.0.0",
     "ngx-bootstrap": "^5.1.2",
     "rxjs": "~6.4.0",
